@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import MealItem from "./MealItem";
+import { useEffect, useState } from 'react';
+import MealItem from './MealItem';
 
 export default function Meals() {
   const [loadedMeals, setLoadedMeals] = useState([]);
@@ -7,7 +7,7 @@ export default function Meals() {
   useEffect(() => {
     async function fetchMeals() {
       try {
-        const response = await fetch("http://localhost:3000/meals");
+        const response = await fetch('http://localhost:3000/meals');
 
         if (!response.ok) {
           //...
@@ -22,7 +22,7 @@ export default function Meals() {
   }, []);
 
   return (
-    <ul id="meals">
+    <ul id='meals'>
       {loadedMeals.map((meal) => (
         <MealItem key={meal.id} meal={meal} />
       ))}
