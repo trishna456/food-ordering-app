@@ -6,7 +6,7 @@ Welcome to the Munch Mate Food Order App! This is a full-stack food ordering app
 - [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Advanced React Concepts and Best Practices](#advanced-react--concepts-and-best-practices)
+- [Advanced React Concepts and Best Practices](#advanced-react-concepts-and-best-practices)
 - [Backend Development](#backend-development)
 - [Installation](#installation)
 - [Usage](#usage)
