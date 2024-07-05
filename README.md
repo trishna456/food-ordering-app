@@ -33,7 +33,7 @@ Check out the live demo of the application hosted on Netlify: [Munch Mate](https
 
 ## Advanced React Concepts and Best Practices
 
-### Managing Side Effects with `useEffect`
+#### Managing Side Effects with `useEffect`
 - Using `useEffect` for side effects and their cleanup functions to avoid memory leaks and unexpected behaviors.
 
 ### Currency Formatter
