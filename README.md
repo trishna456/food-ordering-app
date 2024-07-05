@@ -7,7 +7,6 @@ Welcome to the Munch Mate Food Order App! This is a full-stack food ordering app
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Folder Structure](#folder-structure)
 - [Advanced Concepts and Best Practices](#advanced-concepts-and-best-practices)
 - [Technologies Used](#technologies-used)
 
@@ -58,43 +57,6 @@ Check out the live demo of the application hosted on Netlify: [Munch Mate](https
    cd ..
    npm run dev
    ```
-
-## Folder Structure
-
-munch-mate-food-order/
-├── backend/
-│   ├── data/
-│   ├── node_modules/
-│   ├── public/
-│   ├── app.js
-│   ├── package-lock.json
-│   └── package.json
-├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   │   ├── UI/
-│   │   │   ├── Cart.jsx
-│   │   │   ├── CartItem.jsx
-│   │   │   ├── Checkout.jsx
-│   │   │   ├── Error.jsx
-│   │   │   ├── Header.jsx
-│   │   │   ├── MealItem.jsx
-│   │   │   ├── Meals.jsx
-│   │   ├── hooks/
-│   │   │   └── useHttp.js
-│   │   ├── store/
-│   │   │   ├── CartContext.jsx
-│   │   │   ├── UserProgressContext.jsx
-│   │   ├── util/
-│   │   ├── App.jsx
-│   │   ├── index.css
-│   │   └── main.jsx
-├── .gitignore
-├── index.html
-
 
 ## Advanced Concepts and Best Practices
 - Managing Side Effects with `useEffect` and Clean Up Functions
