@@ -20,6 +20,10 @@ export default function useHttp(url, config, initialData) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState();
 
+  function clearData() {
+    setData(initialData);
+  }
+
   /*
    * Wrapping sendRequest with useCallback
    * to prevent creation of a new function object everytime the state changes and the component is re-rendered
@@ -32,10 +36,10 @@ export default function useHttp(url, config, initialData) {
 
   const sendRequest = useCallback(
     // send request and updating state based on request status
-    async function sendRequest() {
+    async function sendRequest(data) {
       setIsLoading(true);
       try {
-        const resData = await sendHttpRequest(url, config);
+        const resData = await sendHttpRequest(url, { ...config, body: data });
         setData(resData);
       } catch (error) {
         setError(error.message || 'Something went wrong!');
@@ -58,5 +62,6 @@ export default function useHttp(url, config, initialData) {
     isLoading,
     error,
     sendRequest,
+    clearData,
   };
 }
