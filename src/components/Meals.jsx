@@ -6,6 +6,7 @@ import Error from './Error';
 const requestConfig = {};
 // creating config obj outside the component function to avoid infinite loops
 // Since config is added as a dependency in useHttp
+
 export default function Meals() {
   const {
     data: loadedMeals,
