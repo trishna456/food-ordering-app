@@ -14,7 +14,7 @@ Welcome to the Munch Mate Food Order App! This is a full-stack food ordering app
   
 
 ## Demo
-Check out the live demo of the application hosted on Netlify: [Munch Mate](https://munch-mate-trishna.netlify.app/)
+Check out the live demo of the application hosted on Netlify: [Munch Mate](https://munch-mate-trishna.netlify.app/)  
 Note: Backend is temporarily hosted on Render's free tier. Free tier instances spin down with inactivity, which can delay requests by 50 seconds or more.
 
 ## Features
