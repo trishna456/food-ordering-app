@@ -24,16 +24,7 @@ export default function useHttp(url, config, initialData) {
     setData(initialData);
   }
 
-  /*
-   * Wrapping sendRequest with useCallback
-   * to prevent creation of a new function object everytime the state changes and the component is re-rendered
-   * since we are updating some state in this function, it will cause the component that uses this hook to execute again
-   * this will cause the effect function to run again
-   * because sendRequest will change everytime the surrounding component executes again
-   * because a new function object will be created
-   * so wrapping it with a useCallback
-   */
-
+  // to prevent creation of a new function object everytime the state changes and the component is re-rendered
   const sendRequest = useCallback(
     // send request and updating state based on request status
     async function sendRequest(data) {
@@ -54,7 +45,7 @@ export default function useHttp(url, config, initialData) {
     if ((config && (config.method === 'GET' || !config.method)) || !config) {
       sendRequest();
     }
-  }, [sendRequest, config]); // since sendRequest is defined outside useEffect, adding it as a dependency here
+  }, [sendRequest, config]);
 
   return {
     // exposing the states and function to all components that will use this hook
